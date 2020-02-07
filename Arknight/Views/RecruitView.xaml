@@ -6,7 +6,37 @@
              xmlns:local="clr-namespace:Arknight.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="Red">
-            
+    <Grid Background="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="16.6*"></ColumnDefinition>
+            <ColumnDefinition Width="16.6*"></ColumnDefinition>
+            <ColumnDefinition Width="16.6*"></ColumnDefinition>
+            <ColumnDefinition Width="16.6*"></ColumnDefinition>
+            <ColumnDefinition Width="16.6*"></ColumnDefinition>
+            <ColumnDefinition Width="16.6*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="90*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Row="0" Grid.Column="0">
+            <ComboBox x:Name="tag1" />
+        </DockPanel>
+        <DockPanel Grid.Row="0" Grid.Column="1">
+            <ComboBox x:Name="tag2" />
+        </DockPanel>
+        <DockPanel Grid.Row="0" Grid.Column="2">
+            <ComboBox x:Name="tag3" />
+        </DockPanel>
+        <DockPanel Grid.Row="0" Grid.Column="3">
+            <ComboBox x:Name="tag4" />
+        </DockPanel>
+        <DockPanel Grid.Row="0" Grid.Column="4">
+            <ComboBox x:Name="tag5" />
+        </DockPanel>
+        <DockPanel Grid.Row="0" Grid.Column="5">
+            <ComboBox x:Name="tag6" />
+        </DockPanel>
     </Grid>
 </UserControl>

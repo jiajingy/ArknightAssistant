@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Arknight.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -21,6 +22,36 @@ namespace Arknight.Views
         public RecruitView()
         {
             InitializeComponent();
+
+            InitializeCustom();
+        }
+
+        private void InitializeCustom()
+        {
+            IntializeTagDropdowns();
+        }
+
+        private void IntializeTagDropdowns()
+        {
+            RecruitmentTags recruitmentTags = new RecruitmentTags();
+
+            List<ComboBox> TagsCombobox = CreateDropdownList();
+            foreach (var tagsBox in TagsCombobox)
+                tagsBox.ItemsSource = recruitmentTags.Tags;
+
+        }
+
+        private List<ComboBox> CreateDropdownList()
+        {
+            List<ComboBox> TagsCombobox = new List<ComboBox>();
+            TagsCombobox.Add(tag1);
+            TagsCombobox.Add(tag2);
+            TagsCombobox.Add(tag3);
+            TagsCombobox.Add(tag4);
+            TagsCombobox.Add(tag5);
+            TagsCombobox.Add(tag6);
+
+            return TagsCombobox;
         }
     }
 }
